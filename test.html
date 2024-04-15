@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OK Go - Needing/Getting - Official Video</title>
+
+    <!-- Open Graph tags -->
+    <meta property="og:title" content="OK Go - Needing/Getting - Official Video" />
+    <meta property="og:type" content="video.other" />
+    <meta property="og:url" content="https://www.youtube.com/@okgo" />
+    <meta property="og:image" content="https://i.ytimg.com/vi/MejbOFk7H6c/hqdefault.jpg" />
+    <meta property="og:description" content="Official music video by OK Go performing 'Needing/Getting'." />
+    <meta property="og:video" content="https://www.youtube.com/embed/MejbOFk7H6c" />
+    <meta property="og:video:width" content="200" />
+    <meta property="og:video:height" content="113" />
+    <meta property="og:site_name" content="YouTube" />
+
+    <!-- Additional styles -->
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .video-container {
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            line-height: 0;
+            margin-bottom: 20px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+        }
+        input[type="text"] {
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            padding: 10px 15px;
+            color: white;
+            background-color: #007BFF;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="video-container">
+        <!-- Embed YouTube video using iframe -->
+        <iframe 
+            src="https://www.youtube.com/embed/MejbOFk7H6c?feature=oembed" 
+            frameborder="0" 
+            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" 
+            allowfullscreen 
+            title="OK Go - Needing/Getting - Official Video">
+        </iframe>
+    </div>
+    <!-- Form with input fields -->
+    <form action="submit.php" method="POST">
+        <input type="text" name="firstname" placeholder="Enter your first name" required>
+        <input type="text" name="lastname" placeholder="Enter your last name" required>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
